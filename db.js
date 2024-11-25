@@ -1,12 +1,12 @@
 const mongoose = require("mongoose");
 
 // Use your MongoDB connection string here
-const URL = "mongodb+srv://shubhamsingh22ns:JDXwIQFTGw1NnGRz@cluster0.chzv2.mongodb.net/";
+//const URL = "mongodb+srv://shubhamsingh22ns:JDXwIQFTGw1NnGRz@cluster0.chzv2.mongodb.net/";
+const URL = "mongodb://localhost:27017/";
 
 // Establish connection to MongoDB
 mongoose.connect(URL, {
-    useNewUrlParser: true,  // Correct typo here
-    useUnifiedTopology: true  // Keep this for compatibility with the new MongoDB driver
+      // Keep this for compatibility with the new MongoDB driver
 });
 
 // Access the connection object

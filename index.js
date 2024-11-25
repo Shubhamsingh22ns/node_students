@@ -22,5 +22,8 @@ app.get("/",async(req,res)=>{
 //import router
 
 const StudentRoutes = require("./routes/StudentRoutes");
+const MenuRoutes = require("./routes/MenuRoutes");
+
+app.use("/Menu",MenuRoutes);
 app.use("/Student",StudentRoutes);
   
