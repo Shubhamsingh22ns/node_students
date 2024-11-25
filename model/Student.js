@@ -21,6 +21,14 @@ const studentSchema = new mongoose.Schema({
         type: String,
         required: true,
         enum: ["CSE", "ECE", "ME"]
+    },
+    username:{
+        type: String,
+        require: true
+    },
+    password:{
+        type: String,
+        require: true
     }
 });
 
